@@ -45,7 +45,23 @@
          }
          .pesquisa{
             width: 100%;
+         }
+         .titulo{
+            color: darkslategray;
+            text-align: center;
          } 
+         .catalogo{
+            border-collapse: collapse;
+            width: 80%;
+            margin: auto;
+         }
+         .catalogo thead{
+            background-color: black;
+            color: aliceblue;
+            text-align: left;
+            height: 30px;
+         }
+
     </style>
 </head>
 <body>
@@ -74,6 +90,36 @@
     <!--FIM cABECALHO DA PAG-->
     <!--AREA PRINSIPAL DA PAG-->
     <main>
+        <h2 class="titulo">Catalogo de Produtos</h2>
+        <table class="catalogo">
+            <thead>
+                <tr>
+                    <th>Foto</th>
+                    <th>Descrição</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="img/BOTA1.jpg" alt=""></td>
+                    <td>
+                        <h5>Bota</h5>
+                        <ul>
+                            <li>Cor: Preto</li>
+                            <li>Tamanho: 35 - 44 </li>
+                        </ul>
+                    </td>
+                    <td>
+                       <p>R$ 300,00</p>
+                       <p>R$ 500,00</p>
+                    </td>
+                </tr>
+
+            </tbody>
+            <tfoot>
+
+            </tfoot>
+        </table>
 
     </main>
     <!--FIM AREA PRINSIPAL DA PAG-->
@@ -84,7 +130,7 @@
             <!--row-->
             <div class="row">
                 <!--Coluna 1-->
-                <div class="col-md-3">
+                <div class="col-md-2">
                     <p> Link Raoidos </p>
                     <nav class="nav flex-column">
                         <a class="nav-link text-white py-1" href="privacidade.html">Politica de privacidade</a>

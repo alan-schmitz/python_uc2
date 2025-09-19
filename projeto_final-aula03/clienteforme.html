@@ -87,44 +87,54 @@
                 <div class="col-md-2">
                 </div>
                 <div class="col-md-10">
-                    <h1 class="mb-4 text-center">Catalogo de tenis esportivo</h1>
-                    <div class="tabe-responsivlg">
-                        <table class="table">
-                            <thead class="table-dark">
-                                <th scope="col" style="width: 15%">foto</th>
-                                <th scope="col" style="width: 55%">Descrição</th>
-                                <th scope="col" style="width: 30%">Valor</th>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td> <img src="img/shoes1.jpg" alt="Nike Air Farce 1 07" class="img-thumbnail"></td>
-                                    <td>
-                                        <H5>Nike Air Farce 1 07</H5>
-                                        <ul class="list-unstyled">
-                                            <li><small>Cor: Branco</small></li>
-                                            <li><small>Material Couro</small></li>
-                                            <li class="badge bg-success"><span>Disponivel</span></li>
-                                            <li class="badge bg-warning"><span>Disponivel</span></li>
-                                            <li class="badge bg-danger"><span>Disponivel</span></li>
-                                        </ul>
-                                    </td>
-                                    <td>
-                                        <span class="text-success fw-bold">R$ 899,90</span>
-                                        <del class="text-muted d-block">R$ 1.099,90</del>
-                                    </td>
-                                </tr>
-                            </tbody>
-                            <tfoot class="table-secondary">
-                                <tr>
-                                    <td colspan="3" class="text-center small">
-                                        Preços validos até 30/09/2025 frete gratis para compras acima de R$300,00
-                                    </td>
-                                </tr>
+    
+                    <form action="/cadastro" method="post" target="_blank">
 
-                            </tfoot>
+                    
+                        <label for="nome">Nome:</label> 
+                        <input type="text" id="nome" name="nome"
+                        required placeholder="seu nome completo">
+                        <br>
 
-                        </table>
-                    </div>
+                        <label for="email">E-mail:</label> 
+                        <input type="email" id="email" name="email"
+                        required placeholder="Digite se E-mail">
+                        <br>
+
+                        <label for="Telefone">Telefone:</label>
+                        <input type="tel" id="Telefone" name="Telefone"
+                        pattern="[0-9](11)" title="DDD + NUMERO (APENAS NUMEROS)">
+                        <br>
+
+                        <label for="DTN">Data de nascimento:</label>
+                        <input type="date" id="DTN" name="DTN">
+                        <br>
+
+                        <label for="gerero">Genero</label>
+                        <br>
+                        <input type="radio" id="masculino" name="Genero" value="masculino">
+                        <label for="html">masculino</label><br>
+                        <input type="radio" id="Feminino" name="Genero" value="Feminino">
+                        <label for="css">Feminino</label><br>
+                        <input type="radio" id="outro" name="Genero" value="outro">
+                        <label for="javascript">outro</label>
+                        <br>
+
+                        <label for="Senha">Senha:</label>
+                        <input type="password" id="Senha" name="Senha"
+                        required minlength="6">
+                        <br>
+
+                        <label for="Senha">confirmar Senha:</label>
+                        <input type="password" id="Senha_valida">
+                        <br>
+
+                        <input type="button" value="Salvar">
+                        <button type="submit" value="Emviaar">Emviar</button>
+                        <button type="reset" value="Limpar">Limpar</button>
+
+
+                    </form>
 
                 </div>
 
